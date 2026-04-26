@@ -1,0 +1,25 @@
+/* Sorry I don't know the specific fonts that the example are using */
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+body {
+    justify-self: center;
+    max-width: 600px;
+    margin: 50px;
+    padding: 50px;
+    border: 2px solid lightgray;
+    font-family: 'Times New Roman', Times, serif
+}
+header {
+    text-align: center;
+    font-family: "Spectral", "Times New Roman", Times;
+    text-transform: uppercase;
+}
+h2 {
+    color: #538ebc;
+}
+footer, img {
+    justify-self: center;
+    width: 200px;
+}
+ol li {
+    padding: 10px;
+}
