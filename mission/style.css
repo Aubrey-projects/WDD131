@@ -23,3 +23,6 @@ footer, img {
 ol li {
     padding: 10px;
 }
+.italicized {
+    font-style: italic;
+}
