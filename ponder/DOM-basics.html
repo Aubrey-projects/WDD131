@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  
+body {
+    background-color: #ddd;
+    font-size: 20px;
+}
+#content {
+    max-width: 60%;
+    margin: 40px auto;
+    border: 1px solid darkgrey;
+    padding: 50px;
+}
+p {
+    color: #035f9c;
+    font-size: 1.3em;
+}
+hr {
+    height: 3px;
+    background-color: #035f9c;
+    margin: 30px auto;
+    width: 80%;
+}
+h1, h2, p {
+    text-align: center;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+#topics {
+    width: 55%;
+    margin: 0 auto;
+    line-height: 1.5em;
+}
+.list {
+    list-style-type: none;
+}
+
+.new-list {
+    list-style-type: disc;
+    color: purple;
+}
+    </style>
+</head>
+<body>  
+<div id="content">
+    <h1>HTML, CSS, and JS</h1>
+    
+    <p>The foundational technologies that power websites and web applications</p>
+    <hr>
+    <img src="https://wddbyui.github.io/wdd131/images/trifecta.png" alt="JS, CSS, and HTML logos">
+    <div id="topics">
+        <h2>HyperText Markup Language</h2>
+        <ul class="list">
+            <li>Defines the structure and content of a web page.</li>
+            <li>Without HTML there's nothing for the browser to display.</li>
+        </ul>
+        <h2>Cascading Style Sheets</h2>
+        <ul class="list">
+            <li>Controls how the HTML elements look.</li>
+            <li>Without CSS pages look plain and unstyled.</li>
+        </ul>
+        <h2>JavaScript</h2>
+        <ul class="list">
+            <li>Adds interactivity and dynamic behavior.</li>
+            <li>Without JavaScript nothing on the page responds dynamically to user actions.</li>
+        </ul>
+    </div>
+</div>
+<script> /* You could put the script in the head, if you made it in a separate sheet and use defer,
+ or if your Javascript waits for the user to input something */
+
+    // Anytime we want to change DOM, use document
+
+    // We can see the whole page within the console (whether that's good.... I dunno)
+    console.log(document);
+
+    // If there are multiple, it just returns the first one
+    let firstlist = document.querySelector(".list");
+    // querySelector accepts any css selectors and returns a single element
+
+    firstlist.style.backgroundColor = "red";
+    // or firstlist.style.backgroundColor = "#ff0000"
+
+
+    // this only works on css IDs
+    let content = document.getElementById("content");
+    // you can also use the query selector to get an ID, it is up to you which to use
+    content.style.color = "green";
+
+    document.querySelector("img").setAttribute("src", "picture.png"); // ("key", "value")
+    document.querySelector("img").setAttribute("alt", "This is my new alternative text");
+
+    document.querySelector("h1").textContent = "This is what I want my new Title to be :)";
+    let headingText = document.querySelector("h1").textContent;
+    console.log(headingText);
+
+    firstlist.className = "new-list";
+
+    // selects ALL uls, [1] means second in array
+    document.querySelectorAll("ul")[1].style.backgroundColor = "pink";
+
+    // An HTML element can also be called a Node
+</script>
+</body>
+</html>
