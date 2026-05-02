@@ -18,10 +18,10 @@ function changeTheme() {
         // changes image
         document.querySelector("img").setAttribute("src", "byui-logo-dark.png");
     } else {
-        // changes background black
+        // reverts background back to white
         document.querySelector("body").style.backgroundColor = "white";
 
-        // changes text to white
+        // reverts text back to black
         document.querySelector("h1").style.color = "black";
         document.querySelector("p").style.color = "black";
         document.querySelector(".italicized").style.color = "black";
