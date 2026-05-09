@@ -40,6 +40,10 @@ img {
     #grid_container {
         grid-template-columns: 1fr 1fr;
     }
+    main {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }
 @media screen and (min-width: 1200px) {
     #grid_container {
@@ -50,5 +54,9 @@ img {
     }
     header p {
         display: none;
+    }
+    main {
+        padding-left: 135px;
+        padding-right: 135px;
     }
 }
