@@ -36,16 +36,12 @@ img {
 #grid_container {
     display: grid;
 }
-@media screen and (min-width: 500px) and (max-width: 1000px) {
+@media screen and (min-width: 500px) and (max-width: 1199px) {
     #grid_container {
         grid-template-columns: 1fr 1fr;
     }
-    main {
-        padding-left: 135px;
-        padding-right: 135px;
-    }
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1200px) {
     #grid_container {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -54,9 +50,5 @@ img {
     }
     header p {
         display: none;
-    }
-    main {
-        padding-left: 135px;
-        padding-right: 135px;
     }
 }
