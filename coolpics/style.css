@@ -55,6 +55,12 @@ dialog {
     padding: 3px 6px;
     font-size: 1.5em;
 }
+/* Menu button */
+.hide a {
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (min-width: 500px) and (max-width: 1199px) {
     #grid_container {
         grid-template-columns: 1fr 1fr;
