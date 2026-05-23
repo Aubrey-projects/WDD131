@@ -51,6 +51,8 @@ hr {
     .book-information {
         grid-column: 1/2;
     }
+    /* I made negative margins because, even though the line is rotated,
+    it takes up the same amount of space on either side unless I adjusted the margins */
     .vertical-line {
         margin-top: 0px;
         margin-left: -100px;
