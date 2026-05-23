@@ -23,7 +23,8 @@ time {
     font-style: italic;
 }
 span {
-    color: gold;
+    font-size: 1.4em;
+    color: rgb(164, 120, 10);
 }
 figure img {
     min-width: 100px;
