@@ -1,0 +1,64 @@
+nav {
+    text-align: right;
+    margin: 20px;
+}
+nav a {
+    color: #B22646;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    color: #B22646;
+}
+.book-information {
+    text-align: right;
+    padding: 10px;
+    font-size: 1.1em;
+}
+time {
+    font-style: italic;
+}
+span {
+    color: gold;
+}
+figure img {
+    min-width: 100px;
+    max-width: 200px;
+    width: 40%;
+    transform: translateX(50%);
+}
+footer {
+    text-align: center;
+    font-size: 1.2em;
+}
+hr {
+    background-color: gold;
+    height: 2px;
+}
+.vertical-line {
+    margin-top: 50px;
+}
+@media (min-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr;
+    }
+    .book-information {
+        grid-column: 1/2;
+    }
+    .vertical-line {
+        margin-top: 0px;
+        margin-left: -100px;
+        margin-right: -500px;
+        grid-column: 2/3;
+        width: 350px;
+        transform: translateY(170px) rotate(90deg);
+    }
+    figure {
+        grid-column: 3/4;
+    }
+}
