@@ -48,3 +48,25 @@ let filteredArray2 = names.filter((name) => {
 console.log(filteredArray2);
 
 // ADD reduce, index of, template literal, etc
+
+function myFunc(total, num) {
+    return total - num;
+}
+
+const numbers = [300, 25, 15];
+console.log(numbers.reduce(myFunc));
+
+const aList = ["My", "Favorite", "Foods"];
+let myIndex = aList.indexOf("My");
+console.log(myIndex);
+
+const book = {title:"stormlight", rating:"5/5"};
+
+const bookRating = `
+    <div class="book-rating">
+        <h2>${book.title}</h2>
+        <p>${book.rating}</p>
+    </div>
+`;
+
+
