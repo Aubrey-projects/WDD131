@@ -58,13 +58,13 @@ if (type === "one" && selectedCampuses.length == 0) {
 }
   
   // Let the user know if they choose many campuses but didn't put a note that they need to add a note
-if (type === "many" && note.length == 0) {
+if (type == "many" && note.length == 0) {
     output.textContent = "You have not left a note. Please leave a note."
     return;
 }
   
   //Let the user know if they choose many campus but only had one campus selected that they need to choose at least two campuses
-  if (type == "many" && selectedCampuses.length < 2) {
+  if (type === "many" && selectedCampuses.length < 2) {
     output.textContent = "Choose at least two campuses.";
     return;
   }

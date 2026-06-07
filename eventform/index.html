@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Ticket</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="eventform.js" defer></script>
+</head>
+<body>
+    <main class="wrapper">
+        <h1>Event Ticket</h1>
+        <form id="eventForm">
+            <div class="field">
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" required />
+            </div>
+
+            <div class="field">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text" required />
+            </div>
+
+            <div class="field full">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+            </div>
+
+            <div class="field">
+                <label for="typeOfUser">Type</label>
+                <select
+                id="typeOfUser"
+                name="typeOfUser"
+                aria-controls="codeContainer"
+                required
+                >
+                    <option value="">Choose one</option>
+                    <option value="student">Student</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div>
+        
+            <div class="field">
+                <label for="availableDate">Available Start Date</label>
+                <input id="availableDate" name="availableDate" type="date" required />
+            </div>
+
+            <div id="codeContainer" class="field full" hidden>
+                <label id="userLabel" for="code"></label>
+                <input id="code" name="code" type="text" />
+            </div>
+
+            <button class="full" type="submit">Create Ticket</button>
+      </form>
+
+      <section id="output" aria-live="polite"></section>
+
+    </main>
+</body>
+</html>
