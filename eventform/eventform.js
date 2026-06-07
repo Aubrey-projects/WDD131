@@ -44,7 +44,7 @@ form.addEventListener("submit", function (event) {
     const type = form.typeOfUser.value;
     const availableDate = form.availableDate.value;
     const code = form.code.value.trim();
-    if (type === "student" && Number.isInteger(code) != true) {
+    if (type === "student" && isNaN(code) == true) {
         output.textContent = "Student I# must be 9 digits. Yours includes letters.";
         return;
     } else if (type === "student" && code.length < 9) {
