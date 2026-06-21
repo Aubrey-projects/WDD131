@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+/* --- adjusting size of images --- */
+.social a img {
+    width: 2.5em;
+}
+form button img {
+    width: 3em;
+    height: 2em;
+}
+.RecipeBook-logo {
+    width: 11em;
+    height: 11em;
+}
+.apple-crisp-photo {
+    width: 30em;
+}
+
+/* --- adjusting size of search bar --- */
+form input {
+    width: 75%;
+    height: 3em;
+    font-size: 1.2em;
+}
+hr {
+    width: 80%;
+}
+/* --- adding a border --- */
+.apple-crisp {
+    border: 5px solid black;
+    border-radius: 12px;
+    padding: 50px;
+    justify-self: center;
+    margin: 5px;
+}
+.recipe-info {
+    margin-left: 20px;
+}
+.recipe-info button {
+    font-size: 1.3em;
+    width: 5em;
+    height: 2em;
+}
+
+/* --- fonts and text --- */
+h1, h2 {
+    font-family: "Amatic SC";
+}
+h1 {
+    font-size: 6em;
+}
+h2 {
+    font-size: 3.5em;
+    color: rgb(26, 184, 215);
+}
+
+/* --- flexbox stuff --- */
+.title {
+    display: flex;
+    justify-content: center;
+}
+form {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+footer {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.item-description {
+    display: none;
+}
+@media screen and (min-width: 700px) {
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+    .apple-crisp {
+        display: flex;
+    }
+    .item-description {
+        font-size: 1.5em;
+        display: block;
+    }
+}
