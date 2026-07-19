@@ -2,11 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 nav {
+    margin: 10px;
     display: flex;
     justify-self: flex-end;
     gap: 25px;
     font-family: Sofia;
     font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: #1B1B1E;
+}
+
+body {
+    background-color: #6D676E;
+    border: 5px solid #1B1B1E;
 }
 
 #page-head {
@@ -16,10 +27,35 @@ nav {
     gap: 50px;
     font-family: Sofia;
     font-size: 1.5em;
+    color: #FBFFFE;
 }
 
 #page-head img {
     width: 30%;
     height: 100%;
+}
+
+#home-page img {
+    width: 50%;
+    justify-self: center;
+}
+
+#home-page {
+    padding: 10px;
+    margin: 25px;
+    background-color: #FBFFFE;
+}
+
+#catelogue-page {
+    padding: 10px;
+    margin: 25px;
+    background-color: #FBFFFE;
+}
+
+@media (min-width: 700px) {
+    #home-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 

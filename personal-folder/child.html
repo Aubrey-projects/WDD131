@@ -10,16 +10,48 @@
 <body>
     <header>
         <nav>
-            <a>Home</a>
-            <a>Catalogue</a>
+            <a href="index.html">Home</a>
+            <a href="child.html">Catalogue</a>
         </nav>
         <div id="page-head">
             <img src="book-logo.png" alt="Book logo">
             <h1>Brandon Sanderson Fansite</h1>
         </div>
     </header>
-    <main>
+    <main id="catelogue-page">
+        <label for="search">Search Books</label>
+        <input id="search" type="text">
+        <button id="searchButton">Search</button>
 
+        <div id="book-container">
+        <div class="book-card">
+            <img 
+            src="images/mistborn-final-empire.jpg" 
+            alt="Cover of Mistborn: The Final Empire by Brandon Sanderson"
+            >
+
+            <div class="book-content">
+            <h2>Mistborn: The Final Empire</h2>
+
+            <div class="book-tags">
+                <button>Cosmere</button>
+                <button>Fantasy</button>
+                <button>Magic</button>
+            </div>
+
+            <p>
+                A young street thief joins a rebellion against an immortal ruler 
+                while discovering incredible powers within herself.
+            </p>
+
+            <p>
+                <span class="rating" role="img" aria-label="Rating: 5 out of 5">
+                ⭐⭐⭐⭐⭐
+                </span>
+            </p>
+            </div>
+        </div>
+        </div>
     </main>
     <footer>
 
